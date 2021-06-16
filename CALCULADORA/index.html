@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CALCULADORA</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+	<script src="funciones.js" async="true"></script>
+
+</head>
+<body>
+
+	<div id="calculadora">
+		<div class="pantalla">
+			<div id="tema">
+				<div id="dia">
+					<img src="img/sun.png">
+				</div>
+				<div id="noche">
+					<img id="moon" src="img/moon.png">
+				</div>
+			</div>
+
+
+			<div id="op">
+			</div>
+			<div id="res">
+			</div>
+		</div>
+
+
+
+		<div class="teclado">
+			<div class="teclas funcion" onclick="borrar()">AC</div>
+			<div class="teclas funcion">+/-</div>
+			<div class="teclas funcion" onclick="porcentaje()">%</div>
+			<div class="teclas operacion" onclick="agregar('/')">/</div>
+
+			<div class="teclas" onclick="agregar(7)">7</div>
+			<div class="teclas" onclick="agregar(8)">8</div>
+			<div class="teclas" onclick="agregar(9)">9</div>
+			<div class="teclas operacion" onclick="agregar('*')">x</div>
+
+			<div class="teclas" onclick="agregar(4)">4</div>
+			<div class="teclas" onclick="agregar(5)">5</div>
+			<div class="teclas" onclick="agregar(6)">6</div>
+			<div class="teclas operacion" onclick="agregar('-')">-</div>
+
+			<div class="teclas" onclick="agregar(1)">1</div>
+			<div class="teclas" onclick="agregar(2)">2</div>
+			<div class="teclas" onclick="agregar(3)">3</div>
+			<div class="teclas operacion" onclick="agregar('+')">+</div>
+
+			<div class="teclas" onclick="agregar(0)">0</div>
+			<div class="teclas margen" onclick="agregar('.')">.</div>
+			<div class="teclas igual" onclick="resultado()">=</div>
+		</div>
+
+	</div>
+
+</body>
+</html>
